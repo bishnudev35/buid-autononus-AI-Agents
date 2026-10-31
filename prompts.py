@@ -15,13 +15,20 @@ Return the current weather state for the city
 Example session:
 Question: Should I take an unbrella whit me today in Callifornai?
 Thought:I should check the weather in California first.
-Action: get_weather:California
+Action: {
+"function_name":"get_weather",
+"function_params":{
+  "city":"Callifornia"
+}
+}
 PAUSE
-you will be called again with this:
-Action_Response: Weather in Calliforna is sunny
+you will be called again with the tool result.
 
 You the output:
 Answer: No, I should not take an unbrella today because the weather is sunny.
 
 
 """.strip()
+# if we want to restrict the system 
+# then we shoud inser the prompt first line of the function
+# DON,t ANSWER ANY QUESTION THAT ARE NOT RELATED TO THE WEATHER
