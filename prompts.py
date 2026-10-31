@@ -15,6 +15,7 @@ Return the current weather state for the city
 Example session:
 Question: Should I take an unbrella whit me today in Callifornai?
 Thought:I should check the weather in California first.
+Action: get_weather:California
 PAUSE
 you will be called again with this:
 Action_Response: Weather in Calliforna is sunny
