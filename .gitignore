@@ -1,7 +1,7 @@
 # Environment variables and API keys
 .env
 .env.*
-
+.gitignore
 # Python cache
 __pycache__/
 *.py[cod]
